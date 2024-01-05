@@ -1,38 +1,33 @@
 <html>
 <head>
-<title>전송하기</title>
+<title>카카오톡 버튼있는 메시지 전송하기</title>
 <script id="javascript-sdk" src="https://developers.kakao.com/sdk/js/kakao.min.js"></script>
 </head>
 <body>
-<p><strong>전송하기</strong> By. Blackcats4567</p>
+<p><strong>아래 카카오톡 아이콘을 눌러 전송하세요</strong> By. Blackcats4567</p>
 <a id="kakao-link-btn" href="javascript:sendLink()">
   <img
     src="https://developers.kakao.com/assets/img/about/logos/kakaolink/kakaolink_btn_medium.png"
   />
 </a>
 <script type="text/javascript">
- Kakao.init('15e4d7541a2121707efa4751edea1034');
+ Kakao.init('f3b9a7ff7ec9d16b6a8c1001f62a5db6');
   function sendLink() {
     Kakao.Link.sendDefault({
       objectType: 'feed',
       content: {
-        title: '전송하기',
-        description: '전송하기',
+        title: '저녁 전시대',
+        description: '2024년 첫 금요일 저녁 전시대로 초대합니다',
         imageUrl:
-          '전송하기',
+          'https://postfiles.pstatic.net/MjAyNDAxMDVfMjIz/MDAxNzA0NDIzNDc1MzYz.MWcHPlzlW5jG3K7I6hmis3O0MnoF3OnA5qLWQpjadEEg.OZBaN9dA6CuWs3mw1Wk5N2fuTtoKCXgDdf8_jIwI95Ug.JPEG.wlsdnjse/%EC%A0%84%EC%8B%9C%EB%8C%80%EB%B4%89%EC%82%AC.jpg?type=w580',
         link: {
           mobileWebUrl: 'https://jwgurinorth.cafe24.com',
           webUrl: 'https://jwgurinorth.cafe24.com',
         },
       },
-      social: {
-        likeCount: 좋아요 수, //99999가 최대입니다
-        commentCount: 댓글 수, //99999가 최대입니다
-        sharedCount: 공유 수, //99999가 최대입니다
-      },
       buttons: [
         {
-          title: '누르기',
+          title: '참여하러 가기',
           link: {
             mobileWebUrl: 'https://jwgurinorth.cafe24.com',
             webUrl: 'https://jwgurinorth.cafe24.com',
@@ -42,7 +37,7 @@
     })
   }
 </script>
-<!-- www.blackcats4567.com -->
+
 <!-- 이미지/버튼 클릭 시 주소는 Kakao Developers의 애플리케이션 > 플랫폼 > Web에 넣어야 클릭했을때 성공적으로 표시됩니다 -->
   </body>
 </html>
